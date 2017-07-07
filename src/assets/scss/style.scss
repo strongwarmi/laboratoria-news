@@ -1,0 +1,11 @@
+$primary-color:#F7B617;
+$text-color:#2B2B2B;
+
+@import 'header';
+@import 'noticia';
+@import 'carrousel';
+@import 'footer';    
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
