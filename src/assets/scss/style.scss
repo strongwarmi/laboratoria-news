@@ -1,5 +1,6 @@
 $primary-color:#F7B617;
-$text-color:#2B2B2B;
+$gray-color:#2B2B2B;
+$white-color:#fff;
 
 @import 'header';
 @import 'noticia';
@@ -8,4 +9,5 @@ $text-color:#2B2B2B;
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
 }
