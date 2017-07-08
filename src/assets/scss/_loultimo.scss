@@ -1,0 +1,28 @@
+.noticia {
+    position: relative;
+    margin-bottom: 25px;
+    & img {
+        width: 100%;
+    }
+    & div {
+        position: absolute;
+        bottom: 30px;
+        color: $white-color;
+        padding: 2%;
+        font-weight: bold;
+        width: 100%;
+    }
+}
+
+.bg-gray {
+    background-color: $gray-color;
+    padding: 20px;
+    h5{
+        margin-top: 0;
+        color: $white-color;
+    }
+}
+
+.imagen {
+    width: 100%;
+}

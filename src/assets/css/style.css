@@ -22,12 +22,35 @@
 .nav-mobile {
   padding-bottom: 15px;
   border-bottom: 2px solid #F7B617;
-  margin: 0 auto; }
+  margin: 10px auto 20px; }
   .nav-mobile div {
     padding: 0; }
     .nav-mobile div:nth-child(2) {
       text-align: right;
       margin-top: 5px; }
+
+.noticia {
+  position: relative;
+  margin-bottom: 25px; }
+  .noticia img {
+    width: 100%; }
+  .noticia div {
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    padding: 2%;
+    font-weight: bold;
+    width: 100%; }
+
+.bg-gray {
+  background-color: #2B2B2B;
+  padding: 20px; }
+  .bg-gray h5 {
+    margin-top: 0;
+    color: #fff; }
+
+.imagen {
+  width: 100%; }
 
 body {
   font-family: 'Montserrat', sans-serif;

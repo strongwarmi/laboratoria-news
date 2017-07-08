@@ -2,13 +2,15 @@
 'use strict';
 
 const render = (root) => {
-    root.empty();
+    //root.empty();
     root.append(Header());
-    
+    root.append(LoUltimo());
+
 };
 
 const state = {
-    screen: null,
+    
+    screen: null
 
 };
 
@@ -16,6 +18,7 @@ $(_ => {
     const root = $('.root');
     render(root);
 });
+
 
 'use strict';
 const Header = () => {
@@ -25,7 +28,7 @@ const Header = () => {
     
     const menu = $('<div class="row menu hidden-xs"><ul><li>Lo último</li><li>Opinión </li><li>Cultura</li><li>Perú</li>     <li>Tecnologia</li><li>Mundo</li><li>Economía</li><li>Lifestyle</li><li>Deporte</li></ul></div>');
     
-    const navMobile = $('<div class="row hidden-sm hidden-md hidden-lg nav-mobile"><div class="col-xs-8"><img src="assets/img/logoicon.png" class="text-left" alt="Laboratoria" height="36"></div><div class="col-xs-2 col-xs-offset-2"><img src="assets/img/menu.png" height="25"></div></div>');
+    const navMobile = $('<div class="row hidden-sm hidden-md hidden-lg nav-mobile"><div class="col-xs-8"><img src="assets/img/logoicon.png" class="text-left" alt="Laboratoria" height="30"></div><div class="col-xs-2 col-xs-offset-2"><img src="assets/img/menu.png" height="25"></div></div>');
 
     header.append(navDesktop);
     header.append(menu)
@@ -34,6 +37,49 @@ const Header = () => {
     return header;
 }
 
+'use strict';
+const LoUltimo = (category) => {
+    const divUltimo = $('<section class="container"></section>');
+    const divImagen = $('<div class="row noticia"></div>');
+    const categoria = $('<h4 class="hidden-sm hidden-md hidden-lg text-uppercase"><strong>lo último</strong></h4>');
+    const imagen = $('<img src="assets/img/news/news-0.png">');
+    const divInfo = $('<div></div>');
+    const titulo = $('<h1 class="text-uppercase">titulo</h1>');
+    const subtitulo = $('<p class="hidden-xs">descr</p>');
+    
+    const row = $('<div class="row"><div class="col-sm-6"><img class="imagen" src="assets/img/news/news-1.png"><div class="bg-gray"><h5>titulo</h5></div></div><div class="col-sm-3"><img class="imagen" src="assets/img/news/news-2.png"><div class="bg-gray"><h5>titulo</h5></div></div><div class="col-sm-3"><img class="imagen" src="assets/img/news/news-3.png"><div class="bg-gray"><h5>titulo</h5></div></div></div>');   
+    
+
+    divInfo.append(titulo);
+    divInfo.append(subtitulo);
+
+    divImagen.append(categoria);
+    divImagen.append(imagen);
+    divImagen.append(divInfo);
+
+    divUltimo.append(divImagen);
+    divUltimo.append(row);
+
+/*
+    $.getJSON("/api/news/0", (response) => {
+        foto = response;
+        //console.log(response[2]);
+    });
+*/
+
+
+
+    return divUltimo;
+}
+
+'use strict';
+const Mundo = () => {
+    
+}
+'use strict';
+const Tecnologia = () => {
+    
+}
 'use strict';
 
 
